@@ -4,10 +4,6 @@
   body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-end;
   }
   
   /* Header */
@@ -40,22 +36,22 @@
     font-weight: bolder;
     color: black;
   }
-  
   /* Main */
   .page-section {
-    display: flex;
-    flex-wrap: wrap;
     padding: 20px;
     background-color: rgb(175, 179, 174);
   }
-  .flex div{
-    flex: 50%;
+  .flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   
   .flex div p{
     font-size: 30px;
     text-decoration: underline;
   }
+  
    section h2 {
     display: flex;
     font-size: 40px;
@@ -63,16 +59,16 @@
     height: auto;
   }
   
-  /* Image Placemarker */
-  #img1 {
-    width: 65%;
+   /* Image Placemarker */
+   #main-img {
+    width: 75%;
     height: auto;
-    justify-content: flex-end;
   } 
-  #img2, #img3, #img4 {
-    width:50%;
+  #img1, #img2, #img3, #img4 {
+    width:60%;
     height: auto;
   }
+ 
   
   /* Footer */
   #contact {
@@ -85,16 +81,13 @@
   
   /* Screen Adjusment for different devices */
   @media screen and (max-width: 992px) {
-    nav , body {
+    body {
       width: 50%;
     }
   
   }
   
   @media screen and (max-width: 768px) {
-   nav,body {
+   body {
       width: 100%;
-      flex-direction: column;
-    }
-  
-  }
+   }}
