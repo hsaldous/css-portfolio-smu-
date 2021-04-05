@@ -21,7 +21,7 @@
 ![image](https://github.com/hsaldous/css-portfolio-smu-/blob/main/assets/images/portfolio%20screenshot.png?raw=true)
 
 # Project 1
-![image](![image](https://github.com/hsaldous/css-portfolio-smu-/blob/main/assets/images/portfolio%20screenshot.png?raw=true)
+![image](https://github.com/hsaldous/css-portfolio-smu-/blob/main/assets/images/portfolio%20screenshot.png?raw=true)
 
 # Project 2
 ![image](https://github.com/hsaldous/css-portfolio-smu-/blob/main/assets/images/portfolio%20screenshot.png?raw=true)
