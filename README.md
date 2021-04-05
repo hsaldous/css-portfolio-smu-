@@ -31,3 +31,6 @@
 
 
  # URL ( https://hsaldous.github.io/css-portfolio-smu-/ )
+ 
+ ## LinkedIn: https://www.linkedin.com/in/henry-a-23aa28145
+ 
