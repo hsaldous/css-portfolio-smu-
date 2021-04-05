@@ -4,66 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Portolio</title>
-    <link rel="stylesheet"  href="./assets/styles.css">
+    <link rel="stylesheet"  href="./assets/styles.css"/>
+
 </head>
 <body>
-    <header class ="header"> 
-        <h1>Hank Aldous</h1>
-        <h3>Future Web Developer</h3>
-        <div class = "portfolio-img" alt="Main Picture"> <img src="./assets/images/Head_Shot_-_Hank_Aldous.jpg"> </div>
-    </header> 
-    <nav>
+    <!-- Header/Nav -->
+    <header> 
+        <h1>Hank S. Aldous</h1>
+        <nav>
             <a href="#about">About Me</a> 
             <a href="#work">Work</a>
             <a href="#contact">Contact</a>
-    </nav>
+            <!--<a href= "resume link" > Resume </a>-->
+        </nav>
+    </header> 
+    <section class="hero-banner" id="description">
+        <img src="./assets/images/Head_Shot_-_Hank_Aldous.jpg">
+        <div class="hero-text" id="hero text">
+           
+        </div>
+    </section>
       
-    <main>
+    <main class="page-wrapper">
         <section class="page-section" id="about">
             <h2>About Me</h2>
-            <div class= "about-me">
-            <p>
-              I am from Dallas, Texas. Went to college at Whitworth University and Hendrix college
-              where I was a member of the men's basketball team.
-              After graduation, I started my career in coaching at the high school level then quickly moved into college basketball coaching.
-              After the pandemic hit, I decided that I needed to pursue my passion which has always been
-              coding which has brought me to SMU Coding Bootcamp. Here you will be able to see the work that
-              I have made recently. I hope to work in the web developent industy as it has always been a goal of mine to learn how to code.
-              Currently taking classes at Southern Methodist University to help me get where I want to go.
-            </p>
+            <div>
+                <p>
+                    Former college basketball coach pursuing my passion of web development through classes at Southern Methodist University.
+                </p>
+                <p>
+                    I hope to pursue a career in web development with using the skills I have learned throughout my time at SMU.
+                    The work below is the most recent work I have completed in my classes.
+                </p>
             </div>
         </section>
+
+        <!--Portfolio Container-->
         <section class="page-section" id= "work">
             <h2>Work</h2>
-            <div class="flex">
-                <div  class = "pics" id ="flex1">
-                    <a href="https://hsaldous.github.io/Marketing-Agency-Refactor-/" alt = "Marketing-Agency-Refactor" source= "blank_"><img src="./assets/images/brand-awareness.png" id="main-img"></a>
-                    <p>Marketing Agency Refactor</p>
-                </div>
-                <div class ="pics" id = "flex2">
-                    <a href= "#" alt="online-reputation-management" source="blank_"> <img src="./assets/images/online-reputation-management.jpg" id="img1"></a>
-                    <p>Online Reputation Management</p>
-                </div>
-                <div class = "pics" id = "flex3">
-                    <a href="#" alt="#search-engine-optimization" source="blank_"> <img src="./assets/images/search-engine-optimization.jpg" id="img2"></a>
-                    <p>Search Engine</p> 
-                </div>
-                <div class = "pics" id="flex4">
-                    <a href= "#digital-marketing-meeting"  source="blank_" alt="digital-marketing-meeting"> <img src="./assets/images/digital-marketing-meeting.jpg" id="img3"></a>
-                    <p>Digital Marketing</p>
-                </div>
-                <div class = "pics" id = "flex5">
-                    <a href="social-media-marketing"  source="blank_" alt="social-media-marketing"> <img src="./assets/images/social-media-marketing.jpg" id="img4"></a>
-                    <p>Social Media Marketing</p>
-                </div>
+            <div class="flex-container">
+                
+                    <a href="https://mirrorlessmind.github.io/WeatherFlix/" class="flex-item weather-flix">
+                    <div>
+                        <h3>Weather Flix</h3>
+                    </div>
+                    </a>
+
+
+                    <a href= "https://hsaldous.github.io/weather-dashboard/" class="flex-item weather-dashboard">
+                    <div>
+                        <h3>Weather Dashboard</h3>
+                        <span>HTML, JAVASCRIPT</span>
+                    </div>
+                    </a>
+
+                    <a href= "https://hsaldous.github.io/code-quiz-api/" class="flex-item code-quiz">
+                    <div>
+                        <h3>Code Quiz</h3>
+                        <span>JAVASCRIPT</span>
+                    </div>
+                    </a>    
             </div> 
         </section> 
-    <section class="page-section" id="contact">
-        <h2>Contact Me</h2>
-        <a href="https://aldous1214@gmail.com" id="footer"></a>
-        <p>Email: aldous1214@gmail.com</p>
-        <a href="(214) 729-4248" id="footer"></a>
-        <p>Phone Number: (214) 729-4248</p>
+   
+        <section class="page-section contact" id="contact">
+            <h2>Contact Me</h2>
+            <div>
+                <address>
+                    <a href="https://aldous1214@gmail.com">aldous1214@gmail.com</a>
+                    <a href="https://github.com/hsaldous">GitHub</a>
+                    <a href="https://www.linkedin.com/in/henry-a-23aa28145">LinkedIn</a>
+                </address>
+            </div>
     </section>
 </main>    
 </body>

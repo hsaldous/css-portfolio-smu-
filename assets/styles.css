@@ -1,93 +1,230 @@
 * {
     box-sizing: border-box;
   }
+ 
   body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
     margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: rgb(83, 112, 83);
+    background-color:rgb(216, 214, 214);
   }
   
-  /* Header */
-  header {
-    padding: 40px;
-    text-align: center;
-    font-weight: bolder;
-    background-color: gray;
+  /* HEADER */
+  header, footer {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(216, 214, 214);
+    box-shadow: 0 5px 35px;
   }
   header h1 {
-    font-size: 60px;
-  }
-  header h3 {
-    font-size: 50px;
+    font-size: 4vw;
+    padding: 15px;
+    margin: 0;
   }
   
   /* Nav */
   nav {
     display: flex;
-    justify-content: space-evenly;
-    background-color: darkslategray;
-    padding: 4% 0% 1% 0%;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+
   nav a {
-    padding: 15px 20px;
-    margin: 0% 1% 5% 8%;
-    text-decoration: underline ;
-    text-align: center;
-    font-size: 50px;
-    font-weight: bolder;
-    color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: rgb(83, 112, 83);
   }
-  /* Main */
+
+
+  nav a:last-child {
+    margin-right: 0;
+  }
+
+  main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+    background-color: rgb(216, 214, 214);
+  }
+
+  .hero-banner {
+    background-image: url(./images/dallas-skyline.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+.hero-banner img {
+  height: auto;
+  width: 150px;
+  margin: 0% -4%;
+}
+.hero-banner div {
+    flex: 0 0 90%;
+  }
+
+.hero-banner h2 {
+  background-color: rgb(84, 84, 194);
+  color: grey;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: inline;
+  }
+  .page-wrapper {
+    max-width: 88%;
+    background-color: rgb(216, 214, 214);
+  }
+  
   .page-section {
-    padding: 20px;
-    background-color: rgb(175, 179, 174);
-  }
-  .flex {
+    margin: 25px 0;
+    padding: 10px 0;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
   }
   
-  .flex div p{
-    font-size: 30px;
-    text-decoration: underline;
+  .page-section > h2 {
+    border-right: 10px solid rgb(83, 112, 83);
+    font-size: 50px;
+    padding-right: 20px;
+    flex: 0 0 18%;
+    text-align: right;
   }
   
-   section h2 {
+  .page-section > div {
+    flex: 0 0 75%;
+  }
+  
+  .flex-container {
     display: flex;
-    font-size: 40px;
-    width: 100%;
-    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
-   /* Image Placemarker */
-   #main-img {
-    width: 75%;
-    height: auto;
-  } 
-  #img1, #img2, #img3, #img4 {
-    width:60%;
-    height: auto;
+  .flex-item {
+    text-decoration: none;
+    color: rgb(83, 112, 83) ;
+    border: 5px solid grey;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding:8px;
+    margin: 7px;
   }
- 
+  .flex-item div {
+    background-color:grey;
+    padding: 8px 10px;
+  }
+
+  /*.flex-item:hover {
+    background-color: var(--secondary);
+  } */
+
+  .weather-flix {
+    background-image: url("./images/weatherFlix.png");
+    background-size: cover;
+  }
   
-  /* Footer */
-  #contact {
-    justify-content: space-evenly;
-    background-color: darkslategray;
-    font-size: 40px;
-    font-weight: 20;
+  .weather-dashboard {
+    background-image: url("./images/Screen\ Shot\ 2021-03-21\ at\ 9.41.38\ PM.png");
+    background-size: cover;
+  }
+  
+  .code-quiz {
+    background-image: url("./images/codeQuiz.png");
+    background-size: cover;
+  }
+  .flex-item:first-child {
+      min-height: 450px;
+      flex-basis: 100%;
+  }
+  
+  
+  .contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .contact address a {
+    color: rgb(83, 112, 83);
+    padding: 5px;
     text-decoration: underline;
+    font-size: 1.3rem;
+    font-style: normal;
+    display: inline-block;
   }
   
-  /* Screen Adjusment for different devices */
-  @media screen and (max-width: 992px) {
-    body {
-      width: 50%;
+  /* media  */
+  
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
     }
   
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+  
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+  
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid rgb(83, 112, 83);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
   }
   
   @media screen and (max-width: 768px) {
-   body {
-      width: 100%;
-   }}
+   .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
