@@ -18,5 +18,5 @@
   * WHEN I resize the page or view the site on various screens and devices
    THEN I am presented with a responsive layout that adapts to my viewport
 
-
+![image](file:///Users/HenryAldous/Desktop/portfolio%20screenshot.png)
  # URL ( https://hsaldous.github.io/css-portfolio-smu-/ )
