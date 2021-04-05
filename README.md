@@ -24,7 +24,7 @@
 ![image](https://github.com/hsaldous/css-portfolio-smu-/blob/main/assets/images/weatherFlix.png?raw=true)
 
 # Project 2
-![image](https://github.com/hsaldous/css-portfolio-smu-/blob/main/assets/images/portfolio%20screenshot.png?raw=true)
+![image](https://github.com/hsaldous/css-portfolio-smu-/blob/main/assets/images/Screen%20Shot%202021-03-21%20at%209.41.38%20PM.png?raw=true)
 
 # Project 3
 ![image](https://github.com/hsaldous/css-portfolio-smu-/blob/main/assets/images/portfolio%20screenshot.png?raw=true)
